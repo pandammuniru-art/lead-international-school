@@ -1,0 +1,103 @@
+    body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #fff;
+            color: #222;
+        }
+
+      
+        header {
+            height: 25vh;
+            background: linear-gradient(90deg, #ff9ecd, #ffce6d, #8be9a6, #7dd9ff, #c9a4ff);
+            position: relative;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 60px;
+            color: #fff;
+        }
+
+     
+
+        header h1 {
+            position: relative;
+            max-width: 600px;
+            line-height: 1.2;
+            z-index: 2;
+            float: inline-end;
+
+        }
+
+        .highlight {
+            background: linear-gradient(90deg, #1e73be, #00b3ff);
+            color: white;
+            padding: 25px 20px;
+            font-size: 1.3rem;
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        .title {
+            font-size: 2.7rem;
+            margin-bottom: 10px;
+            color: #1e73be;
+            text-align: left;
+        }
+
+        .about-text {
+            max-width: 900px;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+
+        .wide-photo {
+            margin: 40px 0;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .wide-photo img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+
+       
+        .activities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+
+        .activity-card {
+            background: #f5f9ff;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: 0.3s ease;
+        }
+
+        .activity-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .activity-card h3 {
+            font-size: 1.5rem;
+            color: #1e73be;
+        }
+
+        footer {
+            background: #1e73be;
+            color: #fff;
+            text-align: center;
+            padding: 25px;
+            font-size: 1rem;
+            margin-top: 80px;
+        }

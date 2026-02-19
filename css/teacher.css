@@ -1,0 +1,93 @@
+   body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        
+        .header{
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/lis.jpg') center/cover no-repeat;
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .header h1{
+            font-size: 55px;
+            margin-bottom: 10px;
+             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .header p{
+            font-size: 20px;
+        }
+
+      
+        .teachers-container{
+            width: 90%;
+            margin: auto;
+            padding: 50px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 35px;
+        }
+
+    
+        .teacher-card{
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 7px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        
+
+        .teacher-img{
+            width: 100%;
+            height: 260px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .teacher-info{
+            padding: 20px;
+            text-align: center;
+        }
+
+        .teacher-info h3{
+            font-size: 24px;
+            margin: 0;
+            color: #023e8a;
+        }
+
+        .teacher-info p{
+            font-size: 17px;
+            color: #444;
+        }
+
+       
+        .social-links{
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-links a{
+            width: 35px;
+            height: 35px;
+            background: #023e8a;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            transition: background 0.3s;
+        }
+
+        .social-links a:hover{
+            background: #0077b6;
+        }

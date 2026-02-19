@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMISSION PORTAL</title>
+    <link rel="stylesheet" href="../css/appy.css">
+     <link rel="shortcut icon" href="../images/lis.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+  <img src="../images/lis.jpg" alt="School Logo">
+  <h1>ADMISSION APPLICATION</h1>
+  <p>Please fill the form carefully. A confirmation email will be sent.</p>
+</header>
+
+
+<form class="a-form" action="submit.php" method="POST">
+
+  <h3>Student Information</h3>
+
+  <div class="row">
+    <input type="text" name="first_name" placeholder="First Name" required>
+    <input type="text" name="middle_name" placeholder="Middle Name">
+    <input type="text" name="last_name" placeholder="Last Name" required>
+  </div>
+
+  <div class="row">
+    <input type="text" name="father_name" placeholder="Father's Name" required>
+    <input type="text" name="mother_name" placeholder="Mother's Name" required>
+  </div>
+
+  <input type="date" name="dob" required>
+
+  <div class="gender">
+    <strong>Gender:</strong><br>
+    <label><input type="radio" name="gender" value="Male" required> Male</label>
+    <label><input type="radio" name="gender" value="Female"> Female</label>
+  </div>
+
+  <input type="text" name="address" placeholder="Residential Address" required>
+
+  <div class="row">
+    <input type="text" name="phone" placeholder="Phone Number" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+  </div>
+
+  <input type="text" name="class" placeholder="Class Applying For (e.g JHS 1)" required>
+
+  <h3>Previous School</h3>
+
+  <input type="text" name="previous_school" placeholder="Previous School Name" required>
+  <input type="text" name="previous_grade" placeholder="Previous Grade" required>
+
+  <button type="submit">Submit Application</button>
+
+</form>
+
+
+<footer>
+  <h3>Contact Us</h3>
+  <p>Accra, Ghana | +233 123 456 789 | info@school.com</p>
+  <p>&copy; 2025 Muniru Pandam</p>
+</footer>
+
+
+</body>
+</html>

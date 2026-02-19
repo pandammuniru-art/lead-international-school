@@ -1,0 +1,85 @@
+ header{
+            height: 100vh;
+            background-image: url('../images/Lead-International-School-LIS-Pokuase-Amanfrom-Ghana-SchoolFinder-TortoisePathcom.jpeg');
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            color: white;
+            background-color: gray;
+        }
+        header h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .overlay{
+
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .mission{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            margin: 50px;
+            padding:10px;
+            overflow: hidden;
+            
+        
+        }
+        .mission_words, .vision, .about{
+            max-width: 600px;
+            height: 500;
+            width: 700;
+        }
+        .about{
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            font: 24px Arial,italic;
+        }
+        .mission_words h2, .about h2 ,.vision h2{
+            font-size: larger;
+            color:greenyellow;
+        }
+        .mission_words p, .vision p, .about p{
+            font-size: 20px;
+            color: black;
+            line-height: 1.6;
+            font: 20px Arial, italic;
+        }
+        .mission h2, .vision h2,.about h2{
+            font-size: 40px;
+            align-items: center;
+            color: greenyellow;
+            text-align: center;
+        }
+        .vision{
+            margin: 50px;
+            padding:10px;
+            overflow: hidden;
+            text-align: center;
+             width: 100%;
+            margin: auto;
+            text-align: center;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px;
+            width: 100%;
+            border-radius: 15px;
+        }
+        hr{
+            border-top: 10px; 
+            border-color: greenyellow;}
