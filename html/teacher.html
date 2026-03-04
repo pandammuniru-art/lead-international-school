@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Teachers – Lead International School</title>
+    <link rel="shortcut icon" href="../images/lis.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/teacher.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="topnav">
+        <a href="index.html" class="nav-logo">
+            <img src="../images/lis.jpg" alt="LIS Logo">
+            <span>LIS</span>
+        </a>
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="tc-header">
+        <div class="tc-header-overlay">
+            
+            <h1>Meet Our <span>Teachers</span></h1>
+            <p>Professional · Experienced · Dedicated · Passionate</p>
+            <div class="header-pills">
+                <span>150+ Teachers</span>
+                <span>20+ Years Experience</span>
+                <span>All Departments</span>
+            </div>
+        </div>
+        
+    </header>
+
+    <!-- FILTER TABS -->
+    <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterTeachers('all', this)">All Staff</button>
+        <button class="filter-btn" onclick="filterTeachers('preschool', this)">Pre-School</button>
+        <button class="filter-btn" onclick="filterTeachers('lower', this)">Lower Primary</button>
+        <button class="filter-btn" onclick="filterTeachers('upper', this)">Upper Primary</button>
+        <button class="filter-btn" onclick="filterTeachers('jhs', this)">JHS</button>
+    </div>
+
+    <!-- TEACHERS GRID -->
+    <div class="teachers-container">
+
+        <!-- Pre-School -->
+        <div class="teacher-card" data-dept="preschool">
+            <div class="avatar-wrap">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="75" r="45" fill="#3b4fc8"/>
+                    <ellipse cx="100" cy="175" rx="65" ry="50" fill="#3b4fc8"/>
+                </svg>
+            </div>
+            <div class="teacher-info">
+                <span class="dept-tag preschool">Pre-School</span>
+                <h3>Mrs. Ama Serwaah</h3>
+                <p class="subject">Head of Pre-School</p>
+                <p class="desc">Leads the preschool department with love and 12 years of early childhood education experience.</p>
+            </div>
+        </div>
+
+        <div class="teacher-card" data-dept="preschool">
+            <div class="avatar-wrap">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="75" r="45" fill="#3b4fc8"/>
+                    <ellipse cx="100" cy="175" rx="65" ry="50" fill="#3b4fc8"/>
+                </svg>
+            </div>
+            <div class="teacher-info">
+                <span class="dept-tag preschool">Pre-School</span>
+                <h3>Miss Grace Adjei</h3>
+                <p class="subject">Nursery Teacher</p>
+                <p class="desc">Nurtures young learners through play-based activities, songs, and creative early learning.</p>
+            </div>
+        </div>
+
+        <div class="teacher-card" data-dept="preschool">
+            <div class="avatar-wrap">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="75" r="45" fill="#3b4fc8"/>
+                    <ellipse cx="100" cy="175" rx="65" ry="50" fill="#3b4fc8"/>
+                </svg>
+            </div>
+            <div class="teacher-info">
+                <span class="dept-tag preschool">Pre-School</span>
+                <h3>Mrs. Abena Boateng</h3>
+                <p class="subject">KG Teacher</p>
+                <p class="desc">Creates a warm and structured environment that helps KG learners transition into formal learning.</p>
+            </div>
+        </div>
+
+        <!-- Lower Primary -->
+        <div class="teacher-card" data-dept="lower">
+            <div class="avatar-wrap">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="75" r="45" fill="#3b4fc8"/>
+                    <ellipse cx="100" cy="175" rx="65" ry="50" fill="#3b4fc8"/>
+                </svg>
+            </div>
+            <div class="teacher-info">
+                <span class="dept-tag lower">Lower Primary</span>
+                <h3>Mrs. Patricia Owusu</h3>
+                <p class="subject">English Language · P1–P3</p>
+                <p class="desc">Builds strong literacy foundations through phonics, storytelling, and creative writing activities.</p>
+            </div>
+        </div>
+
+        <div class="teacher-card" data-dept="lower">
+            <div class="avatar-wrap">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="75" r="45" fill="#3b4fc8"/>
+                    <ellipse cx="100" cy="175" rx="65" ry="50" fill="#3b4fc8"/>
+                </svg>
+            </div>
+            <div class="teacher-info">
+                <span class="dept-tag lower">Lower Primary</span>
+                <h3>Mr. Kofi Boateng</h3>
+                <p class="subject">Mathematics · P1–P3</p>
+                <p class="desc">Makes numbers fun and easy with hands-on activities that develop early numeracy skills in learners.</p>
+            </div>
+        </div>
+
+        <div class="teacher-card" data-dept="lower">
+            <div class="avatar-wrap">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="75" r="45" fill="#3b4fc8"/>
+                    <ellipse cx="100" cy="175" rx="65" ry="50" fill="#3b4fc8"/>
+                </svg>
+            </div>
+            <div class="teacher-info">
+                <span class="dept-tag lower">Lower Primary</span>
+                <h3>Miss Efua Mensah</h3>
+                <p class="subject">Creative Arts · P1–P3</p>
+                <p class="desc">Inspires young learners through drawing, craft, music and imaginative play every week.</p>
+            </div>
+        </div>
+
+        <!-- Upper Primary -->
+        <div class="teacher-card" data-dept="upper">
+            <div class="avatar-wrap">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="75" r="45" fill="#3b4fc8"/>
+                    <ellipse cx="100" cy="175" rx="65" ry="50" fill="#3b4fc8"/>
+                </svg>
+            </div>
+            <div class="teacher-info">
+                <span class="dept-tag upper">Upper Primary</span>
+                <h3>Mr. Jonathan Mensah</h3>
+                <p class="subject">Mathematics · P4–P6</p>
+                <p class="desc">Prepares learners for advanced maths with problem-solving techniques and real-life applications.</p>
+            </div>
+        </div>
+
+        <div class="teacher-card" data-dept="upper">
+            <div class="avatar-wrap">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="75" r="45" fill="#3b4fc8"/>
+                    <ellipse cx="100" cy="175" rx="65" ry="50" fill="#3b4fc8"/>
+                </svg>
+            </div>
+            <div class="teacher-info">
+                <span class="dept-tag upper">Upper Primary</span>
+                <h3>Mrs. Abena Asante</h3>
+                <p class="subject">Science · P4–P6</p>
+                <p class="desc">Brings science to life through experiments, observations, and curiosity-driven exploration in class.</p>
+            </div>
+        </div>
+
+        <div class="teacher-card" data-dept="upper">
+            <div class="avatar-wrap">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="75" r="45" fill="#3b4fc8"/>
+                    <ellipse cx="100" cy="175" rx="65" ry="50" fill="#3b4fc8"/>
+                </svg>
+            </div>
+            <div class="teacher-info">
+                <span class="dept-tag upper">Upper Primary</span>
+                <h3>Mr. Samuel Darko</h3>
+                <p class="subject">Social Studies · P4–P6</p>
+                <p class="desc">Teaches culture, governance, and the environment in an engaging and relatable way for all learners.</p>
+            </div>
+        </div>
+
+        <!-- JHS -->
+        <div class="teacher-card" data-dept="jhs">
+            <div class="avatar-wrap">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="75" r="45" fill="#3b4fc8"/>
+                    <ellipse cx="100" cy="175" rx="65" ry="50" fill="#3b4fc8"/>
+                </svg>
+            </div>
+            <div class="teacher-info">
+                <span class="dept-tag jhs">JHS</span>
+                <h3>Mr. Daniel Asare</h3>
+                <p class="subject">ICT · JHS 1–3</p>
+                <p class="desc">Develops digital skills in students through coding basics, typing, research tools and presentations.</p>
+            </div>
+        </div>
+
+        <div class="teacher-card" data-dept="jhs">
+            <div class="avatar-wrap">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="75" r="45" fill="#3b4fc8"/>
+                    <ellipse cx="100" cy="175" rx="65" ry="50" fill="#3b4fc8"/>
+                </svg>
+            </div>
+            <div class="teacher-info">
+                <span class="dept-tag jhs">JHS</span>
+                <h3>Miss Akosua Frimpong</h3>
+                <p class="subject">English · JHS 1–3</p>
+                <p class="desc">Prepares JHS students for BECE with strong grammar, comprehension, and public speaking skills.</p>
+            </div>
+        </div>
+
+        <div class="teacher-card" data-dept="jhs">
+            <div class="avatar-wrap">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="75" r="45" fill="#3b4fc8"/>
+                    <ellipse cx="100" cy="175" rx="65" ry="50" fill="#3b4fc8"/>
+                </svg>
+            </div>
+            <div class="teacher-info">
+                <span class="dept-tag jhs">JHS</span>
+                <h3>Mr. Emmanuel Kusi</h3>
+                <p class="subject">Mathematics · JHS 1–3</p>
+                <p class="desc">Coaches students through advanced maths and BECE exam preparation with proven strategies.</p>
+            </div>
+        </div>
+
+        <div class="teacher-card" data-dept="jhs">
+            <div class="avatar-wrap">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="75" r="45" fill="#3b4fc8"/>
+                    <ellipse cx="100" cy="175" rx="65" ry="50" fill="#3b4fc8"/>
+                </svg>
+            </div>
+            <div class="teacher-info">
+                <span class="dept-tag jhs">JHS</span>
+                <h3>Mrs. Patience Osei</h3>
+                <p class="subject">Integrated Science · JHS 1–3</p>
+                <p class="desc">Guides students through hands-on science experiments and analytical thinking for real-world impact.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="tc-footer">
+        <p>© 2025 Lead International School · Teaching Staff</p>
+    </footer>
+
+    <script>
+        function filterTeachers(dept, btn) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            document.querySelectorAll('.teacher-card').forEach(card => {
+                if (dept === 'all' || card.dataset.dept === dept) {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeIn 0.4s ease';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

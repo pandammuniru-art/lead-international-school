@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Portal – Lead International School</title>
+    <link rel="shortcut icon" href="../images/lis.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/apply.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="topnav">
+        <a href="index.html" class="nav-logo">
+            <img src="../images/lis.jpg" alt="LIS Logo">
+            <span>LIS</span>
+        </a>
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="apply-header">
+        <div class="header-overlay">
+            <h1>LIS Admission <span>Application</span></h1>
+            <p>2025 / 2026 Academic Year &nbsp;·&nbsp; Applications Now Open</p>
+            <div class="header-steps">
+                <div class="step active"><span>1</span> Fill Form</div>
+                <div class="step-line"></div>
+                <div class="step"><span>2</span> Review</div>
+                <div class="step-line"></div>
+                <div class="step"><span>3</span> Interview</div>
+                <div class="step-line"></div>
+                <div class="step"><span>4</span> Enroll</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- FORM -->
+    <div class="form-wrapper">
+        <form class="a-form" action="submit.php" method="POST" enctype="multipart/form-data">
+
+            <!-- SECTION 1: Student Info -->
+            <div class="form-section">
+                <div class="section-label">
+                    <div class="label-icon-wrap">👤</div>
+                    <div>
+                        <h3>Student Information</h3>
+                        <p>Basic personal details of the applicant</p>
+                    </div>
+                </div>
+
+                <div class="row three">
+                    <div class="field">
+                        <label>First Name <span class="req">*</span></label>
+                        <input type="text" name="first_name" placeholder="e.g. Kwame" required>
+                    </div>
+                    <div class="field">
+                        <label>Middle Name</label>
+                        <input type="text" name="middle_name" placeholder="e.g. Asante">
+                    </div>
+                    <div class="field">
+                        <label>Last Name <span class="req">*</span></label>
+                        <input type="text" name="last_name" placeholder="e.g. Mensah" required>
+                    </div>
+                </div>
+
+                <div class="row two">
+                    <div class="field">
+                        <label>Date of Birth <span class="req">*</span></label>
+                        <input type="date" name="dob" required>
+                    </div>
+                    <div class="field">
+                        <label>Nationality <span class="req">*</span></label>
+                        <input type="text" name="nationality" placeholder="e.g. Ghanaian" required>
+                    </div>
+                </div>
+
+                <div class="row two">
+                    <div class="field">
+                        <label>Place of Birth <span class="req">*</span></label>
+                        <input type="text" name="place_of_birth" placeholder="e.g. Accra" required>
+                    </div>
+                    <div class="field">
+                        <label>Home Language</label>
+                        <input type="text" name="home_language" placeholder="e.g. Twi, Hausa">
+                    </div>
+                </div>
+
+                <div class="row two">
+                    <div class="field">
+                        <label>Religion</label>
+                        <select name="religion">
+                            <option value="">-- Select --</option>
+                            <option>Christianity</option>
+                            <option>Islam</option>
+                            <option>Traditional</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label>Blood Group</label>
+                        <select name="blood_group">
+                            <option value="">-- Select --</option>
+                            <option>A+</option><option>A-</option>
+                            <option>B+</option><option>B-</option>
+                            <option>AB+</option><option>AB-</option>
+                            <option>O+</option><option>O-</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Gender <span class="req">*</span></label>
+                    <div class="gender-row">
+                        <label class="gender-option">
+                            <input type="radio" name="gender" value="Male" required>
+                            <span>&#9794; Male</span>
+                        </label>
+                        <label class="gender-option">
+                            <input type="radio" name="gender" value="Female">
+                            <span>&#9792; Female</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Residential Address <span class="req">*</span></label>
+                    <input type="text" name="address" placeholder="e.g. Pokuase, Accra, Ghana" required>
+                </div>
+
+                <div class="field">
+                    <label>Any Medical Condition / Allergy?</label>
+                    <input type="text" name="medical" placeholder="e.g. Asthma, Peanut allergy — write None if none">
+                </div>
+
+                <div class="field">
+                    <label>Passport Photo <span class="req">*</span></label>
+                    <div class="file-upload">
+                        <input type="file" name="photo" accept="image/*" required id="photoInput">
+                        <label for="photoInput" class="file-label">
+                            <i class="fas fa-camera"></i> Click to upload passport photo
+                        </label>
+                        <span class="file-hint">JPG or PNG · Max 2MB</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 2: Admission Details -->
+            <div class="form-section">
+                <div class="section-label">
+                    <div class="label-icon-wrap"></div>
+                    <div>
+                        <h3>Admission Details</h3>
+                        <p>Which class and program is the student applying for?</p>
+                    </div>
+                </div>
+
+                <div class="row two">
+                    <div class="field">
+                        <label>Class Applying For <span class="req">*</span></label>
+                        <select name="class" required>
+                            <option value="">-- Select Class --</option>
+                            <optgroup label="Pre-School">
+                                <option>Crèche</option>
+                                <option>Nursery 1</option>
+                                <option>Nursery 2</option>
+                                <option>KG 1</option>
+                                <option>KG 2</option>
+                            </optgroup>
+                            <optgroup label="Lower Primary">
+                                <option>Primary 1</option>
+                                <option>Primary 2</option>
+                                <option>Primary 3</option>
+                            </optgroup>
+                            <optgroup label="Upper Primary">
+                                <option>Primary 4</option>
+                                <option>Primary 5</option>
+                                <option>Primary 6</option>
+                            </optgroup>
+                            <optgroup label="Junior High">
+                                <option>JHS 1</option>
+                                <option>JHS 2</option>
+                                <option>JHS 3</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label>Academic Year <span class="req">*</span></label>
+                        <select name="academic_year" required>
+                            <option value="">-- Select Year --</option>
+                            <option>2025 / 2026</option>
+                            <option>2026 / 2027</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Boarding or Day Student? <span class="req">*</span></label>
+                    <div class="gender-row">
+                        <label class="gender-option">
+                            <input type="radio" name="boarding" value="Day" required>
+                            <span> Day Student</span>
+                        </label>
+                        <label class="gender-option">
+                            <input type="radio" name="boarding" value="Boarding">
+                            <span>Boarding</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>How did you hear about LIS?</label>
+                    <select name="referral">
+                        <option value="">-- Select --</option>
+                        <option>Friend / Family</option>
+                        <option>Social Media</option>
+                        <option>Website</option>
+                        <option>Radio / TV</option>
+                        <option>Flyer / Banner</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- SECTION 3: Parent/Guardian -->
+            <div class="form-section">
+                <div class="section-label">
+                    <div class="label-icon-wrap"></div>
+                    <div>
+                        <h3>Parent / Guardian Information</h3>
+                        <p>Details of the person responsible for the student</p>
+                    </div>
+                </div>
+
+                <div class="row two">
+                    <div class="field">
+                        <label>Father's Full Name <span class="req">*</span></label>
+                        <input type="text" name="father_name" placeholder="Father's full name" required>
+                    </div>
+                    <div class="field">
+                        <label>Mother's Full Name <span class="req">*</span></label>
+                        <input type="text" name="mother_name" placeholder="Mother's full name" required>
+                    </div>
+                </div>
+
+                <div class="row two">
+                    <div class="field">
+                        <label>Father's Occupation</label>
+                        <input type="text" name="father_occupation" placeholder="e.g. Engineer">
+                    </div>
+                    <div class="field">
+                        <label>Mother's Occupation</label>
+                        <input type="text" name="mother_occupation" placeholder="e.g. Nurse">
+                    </div>
+                </div>
+
+                <div class="row two">
+                    <div class="field">
+                        <label>Primary Phone <span class="req">*</span></label>
+                        <input type="text" name="phone" placeholder="e.g. 0241234567" required>
+                    </div>
+                    <div class="field">
+                        <label>Secondary Phone</label>
+                        <input type="text" name="phone2" placeholder="e.g. 0501234567">
+                    </div>
+                </div>
+
+                <div class="row two">
+                    <div class="field">
+                        <label>Email Address <span class="req">*</span></label>
+                        <input type="email" name="email" placeholder="e.g. parent@gmail.com" required>
+                    </div>
+                    <div class="field">
+                        <label>WhatsApp Number</label>
+                        <input type="text" name="whatsapp" placeholder="e.g. 0241234567">
+                    </div>
+                </div>
+
+                <div class="row two">
+                    <div class="field">
+                        <label>Emergency Contact Name <span class="req">*</span></label>
+                        <input type="text" name="emergency_name" placeholder="e.g. Uncle John" required>
+                    </div>
+                    <div class="field">
+                        <label>Emergency Contact Phone <span class="req">*</span></label>
+                        <input type="text" name="emergency_phone" placeholder="Emergency number" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 4: Previous School -->
+            <div class="form-section">
+                <div class="section-label">
+                    <div class="label-icon-wrap"></div>
+                    <div>
+                        <h3>Previous School Information</h3>
+                        <p>Academic history of the applicant</p>
+                    </div>
+                </div>
+
+                <div class="row two">
+                    <div class="field">
+                        <label>Previous School Name <span class="req">*</span></label>
+                        <input type="text" name="previous_school" placeholder="School name" required>
+                    </div>
+                    <div class="field">
+                        <label>Previous Class / Grade <span class="req">*</span></label>
+                        <input type="text" name="previous_grade" placeholder="e.g. Primary 6" required>
+                    </div>
+                </div>
+
+                <div class="row two">
+                    <div class="field">
+                        <label>Previous School Location</label>
+                        <input type="text" name="prev_location" placeholder="e.g. Kumasi, Ghana">
+                    </div>
+                    <div class="field">
+                        <label>Year Last Attended</label>
+                        <input type="text" name="prev_year" placeholder="e.g. 2024">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Reason for Leaving Previous School</label>
+                    <textarea name="reason_leaving" rows="3" placeholder="Brief reason for leaving..."></textarea>
+                </div>
+
+                <div class="field">
+                    <label>Upload Last School Report Card</label>
+                    <div class="file-upload">
+                        <input type="file" name="report_card" accept=".pdf,.jpg,.png" id="reportInput">
+                        <label for="reportInput" class="file-label">
+                            <i class="fas fa-file-upload"></i> Click to upload report card
+                        </label>
+                        <span class="file-hint">PDF, JPG or PNG · Max 5MB</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 5: Declaration -->
+            <div class="form-section">
+                <div class="section-label">
+                    <div class="label-icon-wrap"></div>
+                    <div>
+                        <h3>Declaration</h3>
+                        <p>Please read and agree before submitting</p>
+                    </div>
+                </div>
+
+                <div class="declaration-box">
+                    <p>I hereby confirm that all information provided in this application is true and accurate. I understand that any false information may result in the rejection or cancellation of the application. I agree to abide by the rules and regulations of Lead International School.</p>
+                </div>
+
+                <label class="checkbox-label">
+                    <input type="checkbox" name="declaration" required>
+                    <span>I agree to the above declaration and the school's terms & conditions <span class="req">*</span></span>
+                </label>
+
+                <label class="checkbox-label">
+                    <input type="checkbox" name="newsletter">
+                    <span>I would like to receive school updates and newsletters via email</span>
+                </label>
+            </div>
+
+            <!-- SUBMIT -->
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> Submit Application
+            </button>
+
+            <p class="form-note">&#128274; Your information is secure and will only be used for admission purposes.</p>
+
+        </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="apply-footer">
+        <div class="footer-inner">
+            <h3>&#128205; Contact Admissions Office</h3>
+            <p>Pokuase–Amanfrom, Accra, Ghana</p>
+            <p>&#128222; +233 555 387 684 &nbsp;|&nbsp; &#128140; Leadinternationalschool425@gmail.com</p>
+            <p>&#128337; Office Hours: Mon–Fri · 7:30AM – 4:00PM</p>
+            <p style="margin-top:16px; opacity:0.45; font-size:12px;">© 2025 Lead International School · Built by Muniru Pandam</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('input[type="file"]').forEach(input => {
+            input.addEventListener('change', function () {
+                const label = this.nextElementSibling;
+                if (this.files.length > 0) {
+                    label.innerHTML = `<i class="fas fa-check-circle" style="color:#22c55e"></i> ${this.files[0].name}`;
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
